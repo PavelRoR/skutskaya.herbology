@@ -1,0 +1,47 @@
+-var head_url = 'https://skutskaya.mastervision.su/herbology/';
+-var head_title = '«Травоведение»';
+-var head_description = 'Авторский мастер-класс Анны Скуцкой';
+-var head_img = 'img/banner.jpg';
+-var styles = 'css/styles.min.css';
+-var fav_ico = 'favicon.ico';
+-var fav_png = 'favicon.png';
+
+mixin bb(cl, t)
+	button.button(class= cl data-toggle="modal" data-target="#modal")= t
+
+mixin bl(cl,href,t)
+	a.button(href= href , target="_blank")= t
+
+mixin list(cl,...items)
+	ul(class= cl)
+		each item in items
+			li= item
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		br
+		br
+		br
+		h3.general-title.general-title-light
+			span.span-main 
+			| Достигай 
+			span.span-green большего 
+			| ежедневно!
+		include pug/main/1.main.pug
+		include pug/main/2.take-part.pug
+		include pug/main/3.for.pug
+		include pug/main/4.get.pug
+		include pug/main/5.author.pug
+		include pug/main/6.last.pug
+		include pug/main/7.footer.pug
+		include pug/main/8.modal.pug
+		include pug/main/9.politics.pug
+		include pug/main/10.scripts.pug
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts
+
