@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'RussoOne';
-    src: url('fonts/RussoOne.eot');
-    src: url('fonts/RussoOne.eot') format('embedded-opentype'),
-         url('fonts/RussoOne.woff2') format('woff2'),
-         url('fonts/RussoOne.woff') format('woff'),
-         url('fonts/RussoOne.ttf') format('truetype'),
-         url('fonts/RussoOne.svg#RussoOne') format('svg');
-}
