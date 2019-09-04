@@ -1,0 +1,22 @@
+-var head_title = 'Вы записывались на интенсив по Программированию событий на языке рун';
+-var head_description = 'Скорее проверьте почту, вас ждут домашние задания!';
+-var styles = '../css/bonus.min.css';
+-var fav_ico = '../favicon.ico'
+-var fav_png = '../favicon.png'
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		include pug/header
+		section#main.remind
+			.container
+				h1.main-title.remind-main-title Вы зарегистрированы на интенсив 
+					a(href="https://skutskaya.mastervision.su/herbology/" target="_blank") по Травоведению 
+						i.fa.fa-external-link(aria-hidden="true")
+				h2.main-subtitle.remind-main-subtitle Скорее проверьте почту, вас ждут домашние задания!
+		include pug/bonus/3.footer.pug
+		include pug/scripts/body_bottom_scripts

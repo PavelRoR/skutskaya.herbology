@@ -1,0 +1,24 @@
+-var head_url = 'https://skutskaya.mastervision.su/herbology/home-task-1/';
+-var head_title = '«Ритуал на удачу»';
+-var head_description = '1 домашнее задание от Анны Скуцкой';
+-var styles = '../css/bonus.min.css';
+-var fb_content = '2030481470529055'
+-var video = 'oiwOJCD3kpI';
+-var fav_ico = '../favicon.ico'
+-var fav_png = '../favicon.png'
+
+mixin gt(cl,h3)
+	h3.general-title(class= cl)= h3
+	
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_fb_scripts
+	body
+		include pug/scripts/body_top_fb_scripts
+		include pug/header
+		include pug/ht/1.main.pug
+		include pug/bonus/2.feedback.pug
+		include pug/bonus/3.footer.pug
+		include pug/scripts/body_bottom_scripts
