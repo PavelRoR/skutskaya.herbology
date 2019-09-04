@@ -1,0 +1,53 @@
+section#take-part
+	.container
+		h3.general-title
+			span.span-main
+			| Принять участие!
+		.row
+			.col-md-6.col-sm-6.col-md-push-6.col-sm-push-6
+				h4.variants-title.variants-title-free Бесплатно!
+				.variant
+					h5.variant-title Однодневный мастер-класс
+					h6.variant-subtitle 1-й день мастер-класса:
+					+list('variant-list', 'Использование трав для решения проблем с деньгами, для увеличения дохода и создания финансовой стабильности','Травы, подходящие для налаживания любовных отношений и гармонизации чувств','Как с помощью трав привлечь удачу в жизнь','Травы и здоровье','Очищаем пространство от негативной энергии и ликвидируем застойные ситуации')
+					p.variant-text
+						span Бонус: 
+						| ритуал в прямом эфире по привлечению желаемой суммы денег (по заранее подготовленным материалам).
+					p.variant-text
+						span Участие в розыгрыше. 
+						| Приз - обучение на курсе Анны Скуцкой «ТРАВЫ» бесплатно. Присутствие онлайн обязательно!
+					form(action="https://shop.mastervision.su/?r=personal/newsletter/sub/add&id=3568&lg=ru&Contact[id_newsletter]=889" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-take-part
+						.email-block
+							input( type="hidden" value="1" name="required_fields[email]")
+							input(class="input input-mail" name="Contact[email]" type="text" placeholder="Ваш email")
+						button(type="submit").button.button-form Записаться
+						.clearfix
+						p.alert-message
+						.checking
+							input(type="checkbox" id="check-1" checked).check
+							label(for="check-1").check-label Я согласен с 
+								a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  условиями обработки персональных данных по 152 - Ф3
+						div(style="display: none;")
+							#formTypeSpecificVars(style="display: none;")
+								input(type="hidden" value="889" id="form_newsletter_id_newsletter" name="Contact[id_newsletter]")
+							<!-- API код канала рекламы -->
+							input(type="hidden" value="0" id="form_newsletter_id_advertising_channel_page" name="Contact[id_advertising_channel_page]")
+							input(type="hidden" name="formId" value="140")
+							input(type="hidden" name="formVc" value="3156278419")
+			.col-md-6.col-sm-6.col-md-pull-6.col-sm-pull-6
+				h4.variants-title.variants-title-vip VIP-билет на мастер-класс
+				.variant
+					h5.variant-title Двухдневный мастер-класс
+					h6.variant-subtitle 1-й день мастер-класса:
+					+list('variant-list','Использование трав для решения проблем с деньгами, для увеличения дохода и создания финансовой стабильности','Травы, подходящие для налаживания любовных отношений и гармонизации чувств','Как с помощью трав привлечь удачу в жизнь','Травы и здоровье','Очищаем пространство от негативной энергии и ликвидируем застойные ситуации')
+					p.variant-text
+						span Бонус: 
+						| ритуал в прямом эфире по привлечению желаемой суммы денег (по заранее подготовленным материалам).
+					p.variant-text
+						span Участие в розыгрыше. 
+						| Приз - обучение на курсе Анны Скуцкой «ТРАВЫ» бесплатно. Присутствие онлайн обязательно!
+					h6.variant-subtitle 2-й день мастер-класса:
+					p.variant-text Практическое исполнение ритуалов с травами под руководством Анны Скуцкой.
+					p.variant-text Проведение в прямом эфире ритуалов (по заранее подготовленным материалам) для:
+					+list('variant-list','Создания финансовой стабильности','Привлечения любви','Очищения пространства','Создания защитного оберёга для себя или близкого человека','Снятия стресса, привлечения удачи')
+					+bl('button-vip','','Участвовать за 490 рублей')

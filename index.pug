@@ -10,7 +10,7 @@ mixin bb(cl, t)
 	button.button(class= cl data-toggle="modal" data-target="#modal")= t
 
 mixin bl(cl,href,t)
-	a.button(href= href , target="_blank")= t
+	a.button(class=cl href= href , target="_blank")= t
 
 mixin list(cl,...items)
 	ul(class= cl)
