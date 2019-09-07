@@ -1,0 +1,35 @@
+-var head_url = 'https://skutskaya.mastervision.su/herbology/course/';
+-var head_title = '«Травоведение»';
+-var head_description = 'Авторский мастер-класс Анны Скуцкой';
+-var styles = '../css/course.min.css';
+-var fav_ico = '../favicon.ico';
+-var fav_png = '../favicon.png';
+-oferta = '../oferta/oferta_course.doc'
+
+mixin bl(cl,href,t, id)
+	a.button(class=cl href= href , target="_blank", id= id)= t
+
+mixin list(cl,...items)
+	ul(class= cl)
+		each item in items
+			li= item
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		include pug/header
+		include pug/course/1.main.pug
+		include pug/course/2.get.pug
+		include pug/course/3.plan.pug
+		include pug/course/4.packets.pug
+		include pug/course/5.prices.pug
+		include pug/main/5.author.pug
+		include pug/course/6.last.pug
+		include pug/course/7.footer.pug
+		include pug/course/8.scripts.pug
+		//- include pug/scripts/callback
+		include pug/scripts/body_bottom_scripts

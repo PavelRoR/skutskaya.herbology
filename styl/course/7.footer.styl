@@ -1,0 +1,84 @@
+footer
+	padding 20px 0
+	font-size: 16px
+	font-family: "Arial", sans-serif
+	text-align: center
+	h5
+		font-family: RO
+		font-size: 20px
+.soc-buttons
+	width 100%
+	margin: 0 auto
+	a
+		display: inline-block
+		margin: 10px 7px 15px
+		position relative
+		z-index: 1
+		.fa
+			background-color: myGreen
+			width: 32px;
+			height: 32px;
+			color #ffffff
+			line-height 32px
+			border-radius: 5px
+			border: 1px dotted myDarkGreen
+			font-size 18px
+			position relative
+			z-index 9
+			transition all .3s ease
+		&:hover
+			.fa
+				opacity .9
+				transform: translateY(-3px)
+#conditions
+	text-decoration: underline
+	color: initial
+	&:focus
+		color: initial
+		text-decoration: underline
+	&:hover
+		color initial
+		text-decoration: none
+.modal-dialog
+	width 700px
+button.close
+	position absolute
+	width: 35px
+	height 35px
+	border-radius: 50px
+	line-height: 30px
+	text-align: center
+	font-size: 24px
+	color: #000
+	background-color: #F0F0F0
+	top 10px
+	right 10px
+	left auto
+	z-index 99
+	opacity 1
+	transition: all .1s ease-in-out
+	&:hover
+		color: #F0F0F0
+		background-color: #000
+.modal-backdrop.in
+	opacity .8
+.mail-modal-content
+	background-color: #F8F8F8
+	border-radius: 0
+.modal-title
+	width 84%
+	font-size: 24px
+	font-family: RO
+.modal-subtitle
+	font-size: 22px
+	font-family: RO
+	margin:20px 0 10px
+	span
+		color myGreen
+.modal-list
+	li
+		margin-left: 20px
+		margin-bottom: 10px
+		list-style none
+		&:last-child
+			margin-bottom: 0

@@ -1,0 +1,72 @@
+-var full_1 = '11 500р.';
+-var full_2 = '22 500р.';
+
+-var sale = '1 501р.';
+
+-var today_1 = '9 999р.';
+-var today_2 = '20 999р.';
+
+-var link_1 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3809&clean=true&lg=ru';
+-var link_2 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3813&clean=true&lg=ru';
+
+-var prep_bonus = '1 000р.'
+-var prep_cred = '2 000р.'
+-var prep_link = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3834&clean=true&lg=ru'
+
+section#prices
+	.container
+		h3.general-title
+			span.span-main
+			| Выберите 
+			span.span-green свой вариант 
+			| участия
+		.packets
+			.row
+				.col-md-6.col-sm-6
+					.packet
+						.packet-head
+							h4.packet-head-title
+								small пакет
+								| Серебро
+						.packet-body
+							h5.packet-body-title 6 онлайн-уроков
+							p.more-button(data-toggle='modal' data-target="#lessons") подробнее
+							+list('packet-body-list','обязательные отчеты и характеристика по проделанной работе в личном кабинете','скайп-чат','проверка домашних заданий','1 бонусный урок вопросов-ответов')
+						.packet-footer
+							p.cost.cost-full Стоимость:
+								span= full_1
+							p.cost.cost-sale Скидка:
+								span.sale= sale
+							p.cost.cost-today Стоимость сегодня:
+								span#today-1= today_1
+							+bl('button-cost',link_1,'Выбарть', 'link-1')
+				.col-md-6.col-sm-6
+					.packet
+						.packet-head
+							h4.packet-head-title
+								small пакет
+								| Золото
+						.packet-body
+							h5.packet-body-title 6 онлайн-уроков
+							p.more-button(data-toggle='modal' data-target="#lessons") подробнее
+							+list('packet-body-list','обязательные отчеты и характеристика по проделанной работе в личном кабинете','скайп-чат','проверка домашних заданий','личное ведение учеников', '1 личная консультация','1 бонусный урок по считыванию будущего')
+						.packet-footer
+							p.cost.cost-full Стоимость:
+								span= full_2
+							p.cost.cost-sale Скидка:
+								span.sale= sale
+							p.cost.cost-today Стоимость сегодня:
+								span#today-2= today_2
+							+bl('button-cost',link_2,'Выбарть','link-2')
+		.prepayment
+			h4.prepaymant-title Акция!!!
+			p.prepayment-text Платите 1 000р., бонусом получаете 
+				span#prepayment-bonus= prep_bonus 
+				br
+				| На счет зачисляется 
+				span#prepayment-credited= prep_cred
+			a.button.prepayment-button(href= prep_link target="-blank")#prepayment-link Оплатить 1 000р.
+		.timer
+			h4.timer-title Скидка уменьшится через:
+			.clock
+			.clock-stop
