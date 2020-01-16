@@ -1,0 +1,26 @@
+-var head_title = 'Регистрируйтесь в удобный для вас мессенджер, чтобы оставаться на связи и не пропустить мастер-класс';
+-var styles = '../css/thanks.min.css';
+-var fav_ico = '../favicon.ico'
+-var fav_png = '../favicon.png'
+
+mixin gt(cl,h3)
+	h3.general-title(class= cl)= h3
+	
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_fb_scripts
+	body
+		include pug/scripts/body_top_fb_scripts
+		include pug/header
+		section#main
+			.container
+				p.thanks-text Регистрируйтесь в удобный для вас мессенджер, чтобы оставаться на связи и не пропустить мастер-класс
+					br
+					| + 
+					span бонус «Ритуал на деньги»
+				include pug/bots/bots.pug
+		include pug/bonus/3.footer.pug
+		script(src="../js/thanks.min.js")
+		include pug/scripts/body_bottom_scripts

@@ -16,6 +16,8 @@ html(lang="ru")
 		include pug/scripts/body_top_fb_scripts
 		include pug/header
 		include pug/bonus/1.main.pug
-		include pug/bonus/2.feedback.pug
+		//- include pug/bonus/2.feedback.pug
 		include pug/bonus/3.footer.pug
+		script
+			| var isIE = false || !!document.documentMode;if (isIE) {var head = document.getElementsByTagName("head")[0];var link = document.createElement("link");link.rel = "stylesheet";link.href = "../css/ie-bonus.min.css";head.appendChild(link);}
 		include pug/scripts/body_bottom_scripts

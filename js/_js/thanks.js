@@ -3,6 +3,16 @@
 //@prepros-prepend intlTelInput.min.js
 //@prepros-prepend utils.js
 
+var isIE = false || !!document.documentMode;
+
+if (isIE) {
+    var head = document.getElementsByTagName("head")[0];
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "../css/thanks-ie.min.css";
+    head.appendChild(link);
+}
+
 $(document).ready(function () {
     $('.input-mail').intlTelInput({
         defaultCountry: "ru",
@@ -30,18 +40,6 @@ $(document).ready(function () {
         utilsScript: 'https://mk.beauty-matrix.ru/assets/plugins/intltelinput/js/utils.js',
     });
     $(function () {
-        var e = new Date,
-            t = e.getDate(),
-            n = $(".switch-date");
-        switch (t) {
-            case 20:
-                n.text("20 сентября");
-                break;
-            default:
-                n.text("19 сентября")
-        }
-    });
-    $(function () {
         var check = $('.check', this),
             email = $('.input-mail', this),
             button = $('.button-form', this);
@@ -57,7 +55,7 @@ $(document).ready(function () {
                 button.css({
                     'fontSize': '24px',
                     'color': 'initial'
-                }).text('Отправить');
+                }).text('Получить тетради и завершить регистрацию');
             }
         });
         $(".form").on("submit", function () {
@@ -100,7 +98,7 @@ $(document).ready(function () {
             button.css({
                 'fontSize': '24px',
                 'color': 'initial'
-            }).text('Отправить');
+            }).text('Получить тетради и завершить регистрацию');
             // message.slideUp(500);
         });
         check.click(function () {
@@ -115,7 +113,7 @@ $(document).ready(function () {
             button.css({
                 'fontSize': '24px',
                 'color': 'initial'
-            }).text('Отправить');
+            }).text('Получить тетради и завершить регистрацию');
         });
     });
 });

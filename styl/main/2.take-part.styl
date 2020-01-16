@@ -26,6 +26,7 @@
 	max-width: 518px;
 	margin: 0 auto
 	padding 40px 35px
+	background-color: rgba(#F8F8F8,.7)
 	&-title
 		text-align: center
 		font-size: 24px;
@@ -39,7 +40,7 @@
 		text-transform: uppercase;
 		line-height: 1.5;
 		text-align: center;
-		margin 35px 0 30px
+		margin 0 0 30px
 	&-list
 		li
 			list-style: none
@@ -55,11 +56,13 @@
 			text-transform: uppercase
 			color rgb(41, 102, 53);
 			font-family: RO
+		&:last-of-type
+			margin-bottom: 0
 .button-vip
 	margin-top: 40px
 .input
 	display block
-	margin 0 auto 40px
+	margin 0 auto 20px
 	text-align: center
 	border: 1px solid rgb(32, 44, 35);
 	border-radius: 15px;
@@ -170,4 +173,25 @@ input:-webkit-autofill
 }
 .video-wrapper-take-part
 	max-width 518px
-	margin-top: 40px
+	margin-bottom: 60px
+
+.switch-title
+	font-size: 24px
+	text-align: center
+	font-family: RO
+	&-modal
+		width 84%
+		margin 0 auto
+	&-last
+		color #fff
+.hurryup
+	background-color: myGreen
+	display: inline-block
+	margin 10px 0 15px
+.switch-text
+	text-align: center
+	margin-bottom: 15px
+	&-last
+		color #fff
+.form-take-part
+	margin-top: 50px

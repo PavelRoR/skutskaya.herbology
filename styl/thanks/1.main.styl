@@ -1,6 +1,6 @@
 #main
 	padding 20px 0 60px
-	min-height calc(100vh - 67px - 148px)
+	min-height calc(100vh - 67px - 155px)
 .main-title-thanks
 	font-size: 26px
 	text-align: center
@@ -10,6 +10,8 @@
 		font-family: RO
 .main-container
 	width 100%
+	max-width 650px
+	margin 0 auto 40px
 	background-image url(../img/backgrounds/last_bg.png)
 	background-repeat no-repeat
 	background-position: center
@@ -37,24 +39,13 @@
 		font-size: 26px
 		color myGreen
 		display: block
-.switch-date
-	display: inline-block
-	font-size: 26px
-	font-family: RO
-.form-promo
-	width 100%
-	max-width 700px
-	margin 0 auto
 .inputrow
-	float left
-	margin-right: 30px
 	width 100%
 	max-width: 330px;
+	margin 0 auto
 .intl-tel-input
 	width 100%
 .input-mail
-	float left
-	margin-bottom: 0
 	display block
 	border: 1px solid rgb(32, 44, 35);
 	border-radius: 15px;
@@ -65,14 +56,17 @@
 	color: #000
 @-webkit-keyframes autofill
 	to
-		font-size: 24px
 		color: #000
 		background-color: rgb(239, 239, 239);
 input:-webkit-autofill
 	-webkit-animation-name: autofill;
 	-webkit-animation-fill-mode: both;
 .button-form
-	float right
+.button-bots
+	margin: 10px auto
+	height: auto
+	padding 10px
+	line-height: 1.2
 	max-width 330px
 .alert-message {
 	clear both
@@ -176,16 +170,21 @@ input:-webkit-autofill
 		width 25%
 		color: #ffffff
 		font-size: 14px
-		padding 10px 5px
+		padding 30px 5px 10px
 		transition: all .4s ease
+		background-repeat no-repeat
+		background-position: center top 10px
 		&-vk
 			background-color: #4D75A3
+			background-image url(../img/icons/vk.png)
 		&-tg
 			background-color: #11AADF
+			background-image url(../img/icons/tg.png)
 		&-wa
 			background-color: #0CB40C
 		&-ok
 			background-color: #FF9802
+			background-image url(../img/icons/ok.png)
 		&:focus
 			text-decoration: none
 			color #fff
@@ -197,3 +196,5 @@ input:-webkit-autofill
 			display block
 			font-size: 24px
 			margin-bottom: 2px
+.button-download
+	margin-bottom: 40px

@@ -8,9 +8,11 @@ section#last
 		h4.last-subtitle Начните сейчас это бесплатно!
 		.last-container
 			h5.last-container-title Регистрируйтесь прямо сейчас! 
-				br
-				| Для участников бесплатного мастер-класса мы приготовили  подарки и бонусы
-			form(action="https://shop.mastervision.su/?r=personal/newsletter/sub/add&id=3568&lg=ru&Contact[id_newsletter]=883" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-last
+				//- br
+				//- | Для участников бесплатного мастер-класса мы приготовили  подарки и бонусы
+			h4.switch-title.switch-title-last.hide
+			p.switch-text.switch-text-last.hide
+			form(action="https://shop.mastervision.su/?r=personal/newsletter/sub/add&id=3568&lg=ru&Contact[id_newsletter]=1089" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-last
 				.email-block
 					input( type="hidden" value="1" name="required_fields[email]")
 					input(class="input input-mail input-mail-last" name="Contact[email]" type="text" placeholder="Ваш email")
@@ -23,8 +25,8 @@ section#last
 						a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  условиями обработки персональных данных по 152 - Ф3
 				div(style="display: none;")
 					#formTypeSpecificVars(style="display: none;")
-						input(type="hidden" value="883" id="form_newsletter_id_newsletter" name="Contact[id_newsletter]")
+						input(type="hidden" value="1089" id="form_newsletter_id_newsletter" name="Contact[id_newsletter]")
 					<!-- API код канала рекламы -->
 					input(type="hidden" value="0" id="form_newsletter_id_advertising_channel_page" name="Contact[id_advertising_channel_page]")
-					input(type="hidden" name="formId" value="137")
-					input(type="hidden" name="formVc" value="2118191657")
+					input(type="hidden" name="formId" value="246")
+					input(type="hidden" name="formVc" value="3322762289")

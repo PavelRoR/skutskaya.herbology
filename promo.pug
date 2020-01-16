@@ -14,17 +14,15 @@ html(lang="ru")
 		include pug/header
 		section#main
 			.container
-				h1.main-title-thanks Обязательно участвуйте в предстоящем онлайн-мастер-классе. В рамках нашего бесплатного онлайн-мастер-класса мы будем проводить 
-					span ценный розыгрыш. Только в формате ОНЛАЙН
-					| , для участников, которые будут присутствовать на вебинаре!
+				h1.main-title-thanks Оставьте свои данные, чтоб скачать рабочие тетради для каждого из дней мастер-класса. Они помогут вам максимально эффективно работать на уроках
 				.main-container
-					h2.main-container-title Зарегистрируйте свое участие, чтобы Вам гарантированно пришла ссылка на вебинар
+					//- h2.main-container-title Зарегистрируйте свое участие, чтобы Вам гарантированно пришла ссылка на вебинар
 					form(action="https://shop.mastervision.su/?r=personal/newsletter/data/add&id=3568&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-promo
 						.inputrow
 							.inputblock
 								input(type="hidden" value="1" name="required_fields[phone_number]")
 								input(class="input input-mail" name="Contact[phone_number]" type="text" placeholder="Ваш телефон")
-						button(type="submit").button.button-form Отправить
+						button(type="submit").button.button-form Получить тетради и завершить регистрацию
 						.clearfix
 						p.alert-message
 						.checking
@@ -38,8 +36,10 @@ html(lang="ru")
 							input(type="hidden" value="0" name="Contact[id_advertising_channel_page]")#form_newsletter_id_advertising_channel_page
 							input(type="hidden" name="formId" value="144")
 							input(type="hidden" name="formVc" value="3198101231")
+				a.button.button-bots(href="../bots/") Не нужны тетради, 
+					br
+					| завершить регистрацию
 		include pug/bonus/3.footer.pug
 		include pug/main/9.politics.pug
-		link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
 		script(src="../js/thanks.min.js")
 		include pug/scripts/body_bottom_scripts
